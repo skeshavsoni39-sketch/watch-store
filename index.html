@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE WATCH CLUB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <h1>⌚ THE WATCH CLUB</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+    </div>
+</header>
+   <section class="hero">
+    <h2>Premium New Watches</h2>
+    <p>Find stylish watches at the best prices.</p>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search watches..."
+    >
+
+    <br><br>
+
+    <button>Shop Now</button>
+</section>
+<section class="products">
+
+    <div class="card">
+    <img src="images/watch1.jpg" alt="Casio Watch">
+    <h3>Casio Analog</h3>
+    <p>₹2,499</p>
+    <button onclick="addToCart('Casio Analog')">Add to Cart</button>
+</div>
+</section>
+
+<<section class="products">
+
+    <div class="card">
+        <img src="images/watch1.jpg" alt="Casio Watch">
+        <h3>Casio Analog</h3>
+        <p>₹2,499</p>
+        <button onclick="addToCart('Casio Analog')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="images/watch2.jpg" alt="Titan Watch">
+        <h3>Titan Neo</h3>
+        <p>₹3,999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="images/watch3.jpg" alt="Timex Watch">
+        <h3>Timex Classic</h3>
+        <p>₹1,999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="images/watch4.jpg" alt="Fossil Watch">
+        <h3>Fossil Grant</h3>
+        <p>₹6,999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+<section id="cart">
+    <h2>Shopping Cart</h2>
+
+    <ul id="cart-items">
+    </ul>
+
+    <h3>Total Items: <span id="cart-count-display">0</span></h3>
+</section>
